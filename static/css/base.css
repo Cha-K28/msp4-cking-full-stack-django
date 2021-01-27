@@ -62,12 +62,13 @@ body {
 
 .overlay {
     height: 100%;
-    width: 100%;
+    width: 90%;
     top: 0;
-    left: 0;
+    left: 5%;
     position: fixed;
     background: rgb(223, 217, 217);
     z-index: -1;
+    opacity: 70%;
 }
 
 /* -------------------------------- Media Queries */
