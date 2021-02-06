@@ -26,6 +26,7 @@ def all_lessons(request):
 
     return render(request, 'products/products.html', context)
 
+
 def product_detail(request, product_id):
     """ A view to show individual product details """
 
