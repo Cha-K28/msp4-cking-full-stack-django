@@ -48,19 +48,26 @@
                                                     <div class="input-group-prepend">
                                                     </div>
                                                     <input class="form-control form-control-sm qty_input" type="number"
-                                                        name="quantity" value="{{ item.quantity }}" min="1" max="99"
-                                                        data-item_id="{{ item.item_id }}"
-                                                        id="id_qty_{{ item.item_id }}">
+                                                        name="quantity" value="{{ item.quantity }}" min="1" max="99">
                                                     <div class="input-group-append">
                                                     </div>
+                                                        <a href="{% url 'adjust_bag' item.item_id %}" class="btn rounded-0">
+                                                        </a>
+                                                        <input type="submit" class="btn rounded-0 text-uppercase" value="Update">                            
+                                                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                                                        <input type="hidden" name="price" value="{{ product.price }}">
+                                                        <span>
+                                                        <a href="{% url 'remove_from_bag' item.item_id %}" class="btn btn-outline-black rounded-0">
+                                                        </a>
+                                                        <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Delete">                            
+                                                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                                                        <input type="hidden" name="price" value="{{ product.price }}">
+                                                        </span>
                                                 </div>
+
                                             </div>
+
                                         </form>
-                                        <a class="update-link text-info"><small>Update</small></a>
-                                        <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><small>Remove</small></a>
-                                    </td>
-                                    <td class="py-3">
-                                        <p class="my-0">{{ item.product.quantity }}</p>
                                     </td>
                                 </tr>
                             {% endfor %}
