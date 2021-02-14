@@ -8,8 +8,6 @@ due to the covid 19 pandemic.
 ## Wireframes
 
 
-
-
 ## UX
 
 If the images displayed correctly the layout of the website is very simple. this layout was takien from the product ado project. its a simple layout with clear and obvious navigation buttons.
@@ -24,13 +22,14 @@ When the user clicks in to view a product, they can then add the product to the
 
 ### Features left to implement
 
-This Website is nowhere near finished. 
+This Website is not finished. 
 
 1. The profile app still needs to be set up. within the profile the user should be able to view order history. 
 2. The about page has not been done. the about page simply should contain information about the site and its function
 3. I need to add reviews to the products page. 
 4. Further work is required to get images and styling to work from aws s3
-5.
+5. stripe needs to be set up on the deployed site
+6. fix delete button in shopping bag
 
 
 
@@ -93,7 +92,8 @@ As the website is not finished, proper testing cannot be comleted. however, the 
 10. install gunicorn
 11. create procfile
 12. log into heroko in terminal and stop static files being called. 
-13. set up aws s3
+13. ADD SETTING VARIABLES
+13. push to git hub and enable auto deployment. 
 ----- this is where i had to stop
 
 
